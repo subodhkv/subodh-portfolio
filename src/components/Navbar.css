@@ -1,0 +1,46 @@
+.navbar-custom {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.4s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 1000;
+}
+
+.navbar-brand-custom {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.navbar-brand-custom:hover {
+  color: #0d6efd !important;
+}
+
+.nav-links .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-links .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #0d6efd;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}

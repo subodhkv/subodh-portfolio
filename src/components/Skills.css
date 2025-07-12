@@ -1,0 +1,30 @@
+.skills-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+.skill-name {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
