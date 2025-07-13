@@ -6,7 +6,7 @@ const NavigationBar = () => {
   const [active, setActive] = useState('');
 
   useEffect(() => {
-    const sections = ['about', 'experience', 'projects', 'skills', 'contact'];
+    const sections = ['about', 'experience', 'projects', 'skills', 'education', 'contact'];
     const handleScroll = () => {
       const scrollPos = window.scrollY + 150;
       for (let section of sections) {
@@ -24,7 +24,6 @@ const NavigationBar = () => {
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="navbar-custom">
       <Container>
         <Navbar.Brand href="#about" className="navbar-brand-custom">
-          {/* Add logo if you have one: <img src={logo} className="navbar-logo" alt="logo" /> */}
           Subodh Kumar
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="portfolio-navbar" />
@@ -34,6 +33,7 @@ const NavigationBar = () => {
             <Nav.Link href="#experience" className={active === 'experience' ? 'active-link' : ''}>Experience</Nav.Link>
             <Nav.Link href="#projects" className={active === 'projects' ? 'active-link' : ''}>Projects</Nav.Link>
             <Nav.Link href="#skills" className={active === 'skills' ? 'active-link' : ''}>Skills</Nav.Link>
+            <Nav.Link href="#education" className={active === 'education' ? 'active-link' : ''}>Education</Nav.Link>
             <Nav.Link href="#contact" className={active === 'contact' ? 'active-link' : ''}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
