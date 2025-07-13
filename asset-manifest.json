@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/subodh-portfolio/static/css/main.c3903513.css",
-    "main.js": "/subodh-portfolio/static/js/main.02d60991.js",
+    "main.css": "/subodh-portfolio/static/css/main.c5472256.css",
+    "main.js": "/subodh-portfolio/static/js/main.736d054e.js",
     "static/js/453.51d73069.chunk.js": "/subodh-portfolio/static/js/453.51d73069.chunk.js",
     "static/media/tradding.jpg": "/subodh-portfolio/static/media/tradding.1afadfa76e6affcdcc72.jpg",
     "static/media/interior.jpg": "/subodh-portfolio/static/media/interior.2249d1f28f02155d83de.jpg",
     "static/media/hrms-overview.jpg": "/subodh-portfolio/static/media/hrms-overview.72383620acbcfa72900f.jpg",
     "static/media/profile.jpeg": "/subodh-portfolio/static/media/profile.381606adf0f1e94e1914.jpeg",
+    "static/media/Infusion-main-logo.png": "/subodh-portfolio/static/media/Infusion-main-logo.3f548985b2e4b36fdc6f.png",
+    "static/media/optum-logo-ora-rgb1.svg": "/subodh-portfolio/static/media/optum-logo-ora-rgb1.fdcb50ff245a2d5505a11e03e942c04b.svg",
     "index.html": "/subodh-portfolio/index.html",
-    "main.c3903513.css.map": "/subodh-portfolio/static/css/main.c3903513.css.map",
-    "main.02d60991.js.map": "/subodh-portfolio/static/js/main.02d60991.js.map",
+    "main.c5472256.css.map": "/subodh-portfolio/static/css/main.c5472256.css.map",
+    "main.736d054e.js.map": "/subodh-portfolio/static/js/main.736d054e.js.map",
     "453.51d73069.chunk.js.map": "/subodh-portfolio/static/js/453.51d73069.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3903513.css",
-    "static/js/main.02d60991.js"
+    "static/css/main.c5472256.css",
+    "static/js/main.736d054e.js"
   ]
 }
