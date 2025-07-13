@@ -6,9 +6,8 @@ const Contact = () => (
   <Container id="contact" className="contact-section">
     <h2 className="contact-title">Contact Me</h2>
     <Form
-      action="mailto:subodhkumar2e@gmail.com"
+      action="https://formspree.io/f/xyzpgyvp"  // Replace with your actual Formspree form ID
       method="POST"
-      encType="text/plain"
       className="contact-form"
     >
       <Form.Group className="mb-3">
@@ -29,6 +28,11 @@ const Contact = () => (
           required
         />
       </Form.Group>
+
+      {/* Optional subject or redirect */}
+      <input type="hidden" name="_subject" value="New message from your portfolio!" />
+      {/* <input type="hidden" name="_next" value="https://yourdomain.com/thankyou" /> */}
+
       <Button variant="primary" type="submit" className="contact-button">
         Send Message
       </Button>
