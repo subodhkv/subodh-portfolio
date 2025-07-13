@@ -1,46 +1,81 @@
-.navbar-custom {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.4s ease-in-out;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  z-index: 1000;
+html {
+  scroll-behavior: smooth;
 }
 
+/* Glassy modern navbar */
+.navbar-custom {
+  backdrop-filter: blur(8px);
+  background-color: rgba(10, 25, 47, 0.85) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 999;
+}
+
+/* Brand styling */
 .navbar-brand-custom {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: 1px;
-  color: #ffffff !important;
-  transition: color 0.3s;
+  letter-spacing: 1.2px;
+  color: #64ffda !important;
+  transition: color 0.3s ease;
 }
 
 .navbar-brand-custom:hover {
-  color: #0d6efd !important;
+  color: #00bcd4 !important;
 }
 
+/* Nav links */
 .nav-links .nav-link {
-  color: #ffffff !important;
+  color: #ccd6f6 !important;
   font-weight: 500;
-  margin-left: 15px;
-  transition: all 0.3s ease;
+  margin-left: 20px;
   position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 .nav-links .nav-link:hover {
-  color: #0d6efd !important;
+  color: #64ffda !important;
 }
 
 .nav-links .nav-link::after {
   content: '';
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: #0d6efd;
-  transition: width 0.3s ease-in-out;
   position: absolute;
-  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #64ffda;
   left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-links .nav-link:hover::after {
   width: 100%;
+}
+
+/* Active link highlighting */
+.active-link {
+  color: #64ffda !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .nav-links {
+    padding-top: 10px;
+  }
+
+  .nav-links .nav-link {
+    margin-left: 0;
+    margin-bottom: 12px;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+  }
 }

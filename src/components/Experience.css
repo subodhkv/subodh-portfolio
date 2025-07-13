@@ -1,0 +1,95 @@
+.experience-section {
+  background: linear-gradient(145deg, #f9f9f9, #ffffff);
+  border-radius: 20px;
+  padding: 80px 0;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.experience-card {
+  border: none;
+  border-radius: 16px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.experience-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-weight: 500;
+  color: #0d6efd;
+}
+
+.experience-list {
+  padding-left: 1.4rem;
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.experience-list li {
+  margin-bottom: 8px;
+}
+
+.experience-duration {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #888;
+}
+
+.company-logo {
+  max-height: 50px;
+  object-fit: contain;
+  filter: grayscale(0.2);
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .experience-role {
+    font-size: 1.15rem;
+  }
+
+  .experience-duration {
+    text-align: left !important;
+    margin-top: 15px;
+    display: block;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation-delay: 0.2s;
+  transform: translateY(20px);
+}

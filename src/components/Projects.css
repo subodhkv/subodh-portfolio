@@ -1,47 +1,79 @@
 .project-card {
   border: none;
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(145deg, #ffffff, #f9f9f9);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
 }
 
 .project-card img {
   height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0f0f0;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
 }
 
 .project-icon {
   font-size: 1.6rem;
-  color: #0d6efd; /* Bootstrap primary */
+  color: #0d6efd;
   margin-right: 12px;
 }
 
 .project-title {
   font-weight: 600;
   font-size: 1.25rem;
-  color: #111;
+  color: #212529;
 }
 
 .project-text {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1rem;
+  color: #495057;
   line-height: 1.6;
+  margin-top: 10px;
 }
 
 .section-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
-  color: #1a1a1a;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  color: #0d6efd;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #0d6efd;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Optional entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeInUp 0.6s ease-in-out;
 }
